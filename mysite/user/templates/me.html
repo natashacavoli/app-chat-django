@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Me{% endblock %}
+{% block content %}
+<div class="card border-secondary">
+    <div class="card-body">
+        <h5 class="card-title">About</h5>
+        <p>{{me.name}}</p>
+        <p>{{me.username}}</p>
+        <p>{{me.email}}</p>
+        <p>{{me.bio}}</p>
+        <div align="center">
+            <button id="back" type="button" class="btn btn-outline-dark">Go back</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Me{% endblock %}
+{% block content %}
+<div class="card border-secondary">
+    <div class="card-body">
+        <h5 class="card-title">Hi, {{me.name}}</h5>
+        <div class="list-group list-group-flush">
+            <a href="/me/about" class="list-group-item text-decoration-none">Me</a>
+            <a href="/me/friends" class="list-group-item text-decoration-none">Friends</a>
+            <a href="" class="list-group-item text-decoration-none">Settings</a>
+            <a href="/chat/mychat" class="list-group-item text-decoration-none">Chat</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

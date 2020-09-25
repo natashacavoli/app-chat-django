@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Chat{% endblock %}
+{% block content %}
+<form action="">
+    <div class="form-group">
+        <label for="room">Chat name</label>
+        <input type="text" name="room" id="room" class="form-control" placeholder="Chat name">
+    </div>
+
+    <div align="center">
+        <button type="submit" class="btn btn-outline-dark">Join</button>
+    </div>
+</form>
+{% endblock %}

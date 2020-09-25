@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Me{% endblock %}
+{% block content %}
+<div class="card border-secondary">
+    <div class="card-body">
+        <h5 class="card-title">Friends</h5>
+        <div class="list-group list-group-flush">
+            {% for i in friends %}
+            <a href="/chat/{{i.chat_id}}" class="list-group-item text-decoration-none friend">{{i.friend.name}}</a>
+            {% endfor %}
+        </div>
+        <div align="center">
+            <button id="back" type="button" class="btn btn-outline-dark">Go back</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
